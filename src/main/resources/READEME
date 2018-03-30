@@ -1,0 +1,23 @@
+* 使用Idea开发工具的同学注意避免红色（有问题）、黄线（代码重复）、灰色（未调用）代码预警提示
+* 使用Eclipse开发工具的同学注意黄线（未调用、代码重复）代码预警提示
+
+1. 实体类命名：表名+驼峰+Entity，如 pub_user --> PubUserEntity
+
+2. 请求Controller命名：表名（或任意名）+Controller 如：PubUserController
+
+3. Service类命名：表名（或任意名）+Service 如：PubUserService
+
+4. DAO命名：表名（或任意名）+Dao 如：PubUserDao
+
+5. Mapper文件命名：表名（或任意名）+Mapper 如：PubUserMapper
+
+6. 文档注释模板
+    /**
+     * <p>Description:</p>
+     * @author administrator
+     * @date $date$ $time$
+     * @param $params$
+     * @return $returns$
+     */
+
+7. 运行步骤：将项目导入到IDEA中，配置maven后，运行com.dqcer.drug.DrugApplication.java类即可

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dqcer.drug.web.dao.UserDao">
+
+    <select id="findUserByUsername" parameterType="string" resultType="com.dqcer.drug.web.vo.entity.UserEntity">
+        SELECT
+          du.userId  as userId,
+          du.username as username,
+          du.password as password,
+          du.role as role
+        FROM
+          drug_user du
+        WHERE
+          du.username = #{username}
+
+    </select>
+
+
+</mapper>
